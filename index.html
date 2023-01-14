@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img-container">
+        <div class="icon-cont">
+            <img src="./images/odin-lined.png" alt="">
+            <p class="icon-text">Odin</p>
+        </div>
+        <div class="img-footer">
+            <p>Photo by <a href="https://unsplash.com/@vwalletphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valentin Wallet</a> on <a href="https://unsplash.com/de/fotos/s1Iq2bRoR6Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        </div>
+      </div>
+      <div class="form-cont">
+        <div class="text-upper">
+          <h4>This is not a real online service! You know you need something like this in your life to 
+            help you realize your deepest dreams. Sign up <em>now</em> to get started.
+          </h4>
+          <h4>
+            You know you want to.
+          </h4>
+        </div>
+        <div class="form">
+          <div class="content">
+            <h1>Let's do it!</h1>
+            <form id="signup">
+                <div class="input_fname">
+                  <label for="first_name">
+                    <p>*FIRST NAME</p>
+                    <input type="text" id="first_name" name="first_name" required>
+                  </label>
+                </div>
+                <div class="input_lname">
+                  <label for="last_name">
+                    <p>*LAST NAME</p>
+                    <input type="text" id="last_name" name="last_name" required>
+                  </label>
+                </div>
+                <div class="input_email">
+                  <label for="email">
+                    <p>*EMAIL</p>
+                    <input type="email" name="user_email" id="email" required>
+                  </label>
+                </div>
+                <div class="input_pnumber">
+                  <label for="phone_number">
+                    <p>PHONE NUMBER</p>
+                    <input type="tel" name="user_number" id="phone_number">
+                  </label>
+                </div>
+                <div class="input_pass">
+                  <label for="password">
+                    <p>*PASSWORD</p>
+                    <input type="password" name="user_password" id="password" required>
+                    <p class="invalid"></p>
+                  </label>
+                </div>
+                <div class="input_confpass">
+                  <label for="confpassword">
+                    <p>*CONFIRM PASSWORD</p>
+                    <input type="password" name="user_confirm" id="confpassword" required>
+                    <p class="invalid"></p>
+                  </label>
+                </div>
+            </form>
+          </div>  
+        </div>
+        <button type="submit" form="signup">Create Account</button>
+        <p id="login">Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> auf <a href="https://unsplash.com/de/fotos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->

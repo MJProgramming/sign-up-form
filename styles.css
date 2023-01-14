@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./fonts/norse-bold-webfont.woff") format("woff"),
+    url("./fonts/norse-bold-webfont.woff2") format("woff2");
+}
+
+:root {
+    --width-left: 30%;
+    --width-right: calc(100% - var(--width-left));
+    --width-text-right: 75%;
+    --pad-right: 100px;
+    --head-font-size: clamp(30px, 30px, 70px);
+    --click-color: #778576;
+    --click-hover-color: #646e64;
+    --fonts: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    background: #d7d7d7;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+}
+
+.img-container {
+    background: url("./images/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    box-shadow: -10px 0px 70px;
+    flex-direction: column;
+    position: relative;  
+    font-family: "Norse Bold";
+    width: var(--width-left);
+    height: 100vh;
+}
+
+.img-container .icon-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    background: black;
+    opacity: 0.6;
+}
+
+.icon-cont img {
+    width: 1em;
+    min-width: 50px;
+    max-width: 100px;
+}
+
+.icon-text {
+    font-size: max(1em, 50px);
+    color: white;
+}
+
+
+.img-footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    font-size: max(1em, 20px);
+    align-items: center;
+    align-self: center;
+    color: white;
+    opacity: 0.5;
+}
+
+.img-footer p a{
+    color: white;
+    opacity: 0.5;
+}
+
+.form-cont {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: var(--width-right);
+    font-family: var(--fonts);
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: 400;
+    padding: var(--pad-right);
+}
+
+.text-upper {
+    width: 80%;
+    line-height: 25px;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    background: white;
+    position: relative;
+    background-size: cover;
+    width: calc(100% + var(--pad-right) * 2);
+    padding: 10px;
+    box-shadow: 0px 50px 50px -60px;
+    padding-bottom: 30px;
+}
+
+.form .content {
+    margin-left: calc(var(--pad-right) - 5px);
+}
+
+.form .content h1 {
+    font-size: var(--head-font-size);
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 75px;
+}
+
+form > div > label > p {
+    font-size: 15px;
+}
+
+input {
+    outline: none;
+    width: 100%;
+    height: 3vh;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+}
+
+button[type="submit"] {
+    align-self: flex-start;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 200px;
+    border-style: none;
+    background-color: var(--click-color);
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--click-hover-color);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border: 2px solid #4a6dcc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.invalid::after {
+    content: "*Passwords do not match";
+    color: red;
+}
+
+#login {
+    align-self: flex-start;
+}
+
+#login a {
+    text-decoration: none;
+    color: var(--click-color);
+}
+
+#login a:hover {
+    color: var(--click-hover-color);
+}
