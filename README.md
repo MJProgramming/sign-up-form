@@ -6,7 +6,7 @@ Contains Following Skills:
 
 - HTML
 - CSS
-  -Flexbox
-  -Grid
--JavaScript
-  -Password Validation
+  - Flexbox
+  - Grid
+- JavaScript
+  - Password Validation
